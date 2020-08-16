@@ -1,0 +1,12 @@
+.launch-program-container {
+    display: flex;
+}
+.dev-detail {
+    text-align: center;
+}
+
+@media (max-width: 700px) { 
+    .launch-program-container {
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,13 @@
+:host {
+    flex: 3;
+    margin-left: 10px;
+    @media (max-width: 700px) { 
+        flex: unset;
+        width: 100%;
+        margin-left: 0;
+    }
+    .lauch-program-listing-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
