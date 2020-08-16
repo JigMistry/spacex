@@ -1,6 +1,5 @@
 :host {
     flex: 3;
-    margin-left: 10px;
     @media (max-width: 700px) { 
         flex: unset;
         width: 100%;
@@ -9,5 +8,8 @@
     .lauch-program-listing-container {
         display: flex;
         flex-wrap: wrap;
+        h2 {
+            margin-left: 5px;
+        }
     }
 }
