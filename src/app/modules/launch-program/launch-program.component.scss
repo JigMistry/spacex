@@ -1,12 +1,18 @@
-.launch-program-container {
-    display: flex;
-}
-.dev-detail {
-    text-align: center;
-}
-
-@media (max-width: 700px) { 
+:host {
     .launch-program-container {
-        flex-wrap: wrap;
+        display: flex;
+        @media (max-width: 700px) { 
+            flex-wrap: wrap;
+            h1 {
+                font-size: 24px;
+                text-align: center;
+            }
+        }
+    }
+    .dev-detail {
+        text-align: center;
+        @media (max-width: 700px) { 
+            font-size: 16px;
+        }
     }
 }
