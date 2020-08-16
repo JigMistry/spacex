@@ -16,7 +16,11 @@ export class LaunchProgramService {
   ) { }
 
   filterSelect(filterObj: any) {
-    this.filter.setFilter(filterObj.filterName, filterObj.filterValue);
+    if(this.filter.getFilter(filterObj.filterName) === filterObj.filterValue) {
+      this.filter.setFilter(filterObj.filterName, null);
+    } else {
+      this.filter.setFilter(filterObj.filterName, filterObj.filterValue);
+    }
     this.launchProgramFilterSubject.next();
   }
 
