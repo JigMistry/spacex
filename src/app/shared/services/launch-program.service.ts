@@ -34,6 +34,6 @@ export class LaunchProgramService {
       if(queryObj[key] === null) return;
       query += '&'+key+'='+queryObj[key]
     });
-    return this.http.get('https://api.spaceXdata.com/v3/launches?limit=30'+query);
+    return this.http.get('https://api.spaceXdata.com/v3/launches?limit=100'+query);
   }
 }
